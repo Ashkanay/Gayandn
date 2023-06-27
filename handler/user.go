@@ -17,9 +17,6 @@ func validUser(id string, p string) bool {
 	if user.LoginName == "" {
 		return false
 	}
-	// if !CheckPasswordHash(p, user.Password) {
-	// 	return false
-	// }
 	return CheckPasswordHash(p, user.Password)
 }
 
